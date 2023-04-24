@@ -1,0 +1,68 @@
+body {
+    background-color: #c9efc7;}
+#gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 50px;
+  }
+  
+  .galpic {
+    text-align: center;
+  }
+  
+  .oneimage {
+    background-color: #009570;
+    padding: 5px;
+    font-size: 1.2em;
+    box-shadow: 0 0 10px rgb(22, 22, 22);
+    border-radius: 1%;
+    z-index: -2;
+  }
+  
+  @media only screen and (max-height: 500px) {
+    .galimg {
+      height: 200px;
+      width: auto;
+    }
+    .oneimage {
+      font-size: smaller;
+    }
+  }
+  
+  .galimg {
+    max-width: 80vw;
+    width: 500px;
+  }
+  
+
+  .slideshow {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.9);
+  }
+  
+  .slideshow .close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .slideshow-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  
