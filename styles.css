@@ -8,33 +8,17 @@ body {
     gap: 15px;
     margin-bottom: 50px;
   }
-  
-  .galpic {
-    text-align: center;
-  }
-  
-  .oneimage {
-    background-color: #009570;
+
+.frame{
+  background-color: #009570;
     padding: 5px;
     font-size: 1.2em;
     box-shadow: 0 0 10px rgb(22, 22, 22);
     border-radius: 1%;
-    z-index: -2;
-  }
-  
-  @media only screen and (max-height: 500px) {
-    .galimg {
-      height: 200px;
-      width: auto;
-    }
-    .oneimage {
-      font-size: smaller;
-    }
-  }
-  
-  .galimg {
+}
+
+.image {
     max-width: 80vw;
-    width: 500px;
   }
   
 
