@@ -13,6 +13,7 @@ const setup = () => {
     <div class="frame">
     <img class="image" src="images/${images[i]}"></img>
     <p>${images[i].slice(0,-4)}</p>
+    <object data="text/Aloe Vera.txt"></object>
     </div>
     
     `);
