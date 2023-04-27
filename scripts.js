@@ -23,6 +23,4 @@ const setup = () => {
 
 window.addEventListener("load", setup);
 
-//let plantName = i;
-//    plantName = plantName.slice(0, -1);
-//    <p>${plantName}</p>
+
