@@ -34,21 +34,22 @@ const setup = () => {
 
   let ImgName = document.querySelector("#gallery");
 
+
   for (i = 0; i < images.length; i++) {
-    fetch(`text/${text[i]}`)
-      .then(response => response.text())
-      .then(data => {
-        ImgName.insertAdjacentHTML("beforeend", 
-        `
-        <div class="frame">
-        <img class="image" src="images/${images[i]}"></img>
-        <p>${images[i].slice(0,-4)}</p>
-        <div class="description">${data}</div>
-        </div>
-        `);
-      })
-      .catch(error => console.error(error));
+    
+    ImgName.insertAdjacentHTML("beforeend", 
+    `
+    <div class="frame">
+    <img class="image" src="images/${images[i]}"></img>
+    <p>${images[i].slice(0,-4)}</p>
+    <div class="discription">
+    <object data="text/${text[i]}"></object>
+    </div>
+    </div>
+    
+    `);
   }
+
 }
 
 window.addEventListener("load", setup);
